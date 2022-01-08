@@ -1,0 +1,97 @@
+html {
+    --purple: #6666AA;
+    --dark-purple: #333344;
+    --text-dark: #222;
+    --dark: #444;
+    --text-light: #EFEFEF;
+    --light: #898989;
+}
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: var(--text-dark);
+}
+
+body.dark {
+    color: var(--text-light);
+    background-color: var(--text-dark);
+}
+
+input, textarea {
+    outline: none;
+    resize: none;
+    border: thin solid var(--text-dark);
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-family: inherit;
+
+    padding: 0.5em;
+}
+
+body.dark input, body.dark textarea {
+    border: thin solid var(--light);
+    color: var(--text-light);
+    background-color: var(--text-dark);
+}
+
+button {
+    border: none;
+    padding: 1em 2em;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background: var(--purple);
+    color: var(--text-light);
+}
+
+button[type="reset"] {
+    background: var(--dark-purple);
+    color: var(--text-light);
+}
+
+button:hover {
+    background: var(--dark);
+}
+
+button:active {
+    background: var(--text-dark);
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    background: var(--dark-purple);
+    color: var(--text-light);
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.text-red {
+    color: red;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-link-style {
+    color: inherit;
+    text-decoration: inherit;
+}
